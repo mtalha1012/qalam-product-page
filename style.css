@@ -248,6 +248,48 @@ h2 {
   color: var(--muted);
 }
 
+/* How it works: grid with absolute number badges */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px 24px;
+  list-style: none;
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  margin-top: 20px;
+  padding: 36px 24px 24px;
+  border: 1px solid #2a333d;
+  border-radius: 12px;
+  background: var(--surface);
+  counter-increment: step;
+}
+
+.step::before {
+  content: counter(step);
+  position: absolute;
+  top: -20px;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.step h3 {
+  margin-bottom: 8px;
+}
+
+.step p {
+  color: var(--muted);
+}
 /* CTA */
 .cta {
   text-align: center;

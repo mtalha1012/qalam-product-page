@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
 body {
   font-family: system-ui, sans-serif;
   background: var(--bg);
@@ -60,6 +61,7 @@ h2 {
 .btn:hover {
   opacity: 0.85;
 }
+
 .btn-outline {
   background: transparent;
   color: var(--accent);
@@ -295,6 +297,9 @@ h2 {
 }
 
 .step p {
+  color: var(--muted);
+}
+
 /* FAQ: flexbox column */
 .faq-list {
   display: flex;
@@ -320,6 +325,7 @@ h2 {
   margin-top: 8px;
   color: var(--muted);
 }
+
 /* CTA */
 .cta {
   text-align: center;
@@ -355,7 +361,7 @@ h2 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .navbar {
     flex-wrap: wrap;
     gap: 12px;

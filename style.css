@@ -13,6 +13,10 @@
   --accent: #3fb68b;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 body {
   font-family: system-ui, sans-serif;
   background: var(--bg);
@@ -53,6 +57,9 @@ h2 {
   font-weight: 600;
 }
 
+.btn:hover {
+  opacity: 0.85;
+}
 .btn-outline {
   background: transparent;
   color: var(--accent);
@@ -309,8 +316,21 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+  }
+
   .nav-links {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+    font-size: 0.9rem;
   }
 
   .gallery {

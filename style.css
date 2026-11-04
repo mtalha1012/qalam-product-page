@@ -248,6 +248,31 @@ h2 {
   color: var(--muted);
 }
 
+/* FAQ: flexbox column */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  padding: 16px 20px;
+  border: 1px solid #2a333d;
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.faq-list summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-list p {
+  margin-top: 8px;
+  color: var(--muted);
+}
 /* CTA */
 .cta {
   text-align: center;

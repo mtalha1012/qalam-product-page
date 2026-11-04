@@ -9,7 +9,7 @@ A static product page for Qalam 2.0, a browser extension for NUST students. Buil
 - Flexbox: navbar, hero, FAQ list and footer
 - Positioning: `relative` parents with `absolute` badges, popup image and captions, plus a `sticky` navbar
 - CSS Grid: responsive feature cards, steps and screenshot gallery
-- Media queries at 900px and 600px
+- Media queries at 900px and 700px
 
 ## Run it
 
